@@ -1,8 +1,11 @@
 # ✅ React To-Do Planner (Redux Toolkit + TailwindCSS)
 
-🔗 **Live Demo:** [Click here to explore](https://jsrxlogan.github.io/react-to-do-list/)
+🔗 **Live Demo:** [Click here to explore](https://jsrxlogan.github.io/react-to-do-list/)  
+📂 **GitHub Repo:** [React To-Do Repo](https://github.com/jsrxlogan/react-to-do-list)
 
-A full-featured, responsive To-Do list app built with React, Redux Toolkit, and Tailwind CSS. This is the refined and upgraded version of my first JavaScript to-do list project—now with category-based planning (Daily, Weekly, Monthly, Yearly) and clean, modern UI/UX. [Old To-Do List Demo](https://jsrxlogan.github.io/To-Do-List/)
+
+A full-featured, responsive To-Do list app built with React, Redux Toolkit, and Tailwind CSS. This is the refined and upgraded version of my first JavaScript to-do list project—now with category-based planning (Daily, Weekly, Monthly, Yearly) and clean, modern UI/UX. 
+
 
 ## 🚀 Features
 - Task categorization: Daily, Weekly, Monthly, Yearly
@@ -42,5 +45,5 @@ After completing my React, Redux Toolkit, and TailwindCSS training, I came back 
 - 🔄 Category switching is handled through **state**, not router logic.
 - 🌟 The app is now structured, scalable, and future-ready.
 
-> ✨ [New React To-Do Planner](https://jsrxlogan.github.io/react-to-do-list/)
-> ✨ [Old To-Do List Demo](https://jsrxlogan.github.io/To-Do-List/)
+🔗 **Live Demo:** [Explore old to do planner here](https://jsrxlogan.github.io/To-Do-List/)  
+📂 **GitHub Repo:** [Old To-Do Repo](https://github.com/jsrxlogan/To-Do-List)
