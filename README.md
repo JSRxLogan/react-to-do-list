@@ -11,6 +11,7 @@ A full-featured, responsive To-Do list app built with React, Redux Toolkit, and 
 - Task categorization: Daily, Weekly, Monthly, Yearly
 - Add, delete, and complete tasks
 - Category toggling using a shared state (not router)
+- Persistent data: All tasks and the last selected category are saved in localStorage
 - Persistent task state using Redux Toolkit
 - Looping through and rendering each task as a separate component
 - Responsive UI with TailwindCSS
@@ -27,6 +28,7 @@ A full-featured, responsive To-Do list app built with React, Redux Toolkit, and 
 - Redux slices and global state management
 - Rendering to-do items via `.map()` into individual components
 - State-driven category switching (not using react-router)
+- LocalStorage to store last opened category and the tasks in that category
 - Utility-first styling with Tailwind
 - Deployed with GitHub Pages
 
