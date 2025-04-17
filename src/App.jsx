@@ -4,7 +4,7 @@ import Footer from "./components/Footer"
 
 function App() {
   return (
-      <div className="max-w-md mx-auto my-14 px-2 shadow-xl rounded-2xl overflow-hidden md:my-8">
+      <div className="max-w-md mx-auto mt-8 px-2 shadow-xl rounded-2xl  md:mt-8">
         <Header />
         <MiddleComponent />
         <Footer />
