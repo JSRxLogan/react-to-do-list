@@ -30,41 +30,54 @@ function TodoElement({todo}) {
         dispatch(removeTodo(todo))
       }
 
-return (
-        <>
+      return (
+        <div className="flex items-center gap-2 py-2 px-3 bg-white rounded-lg shadow-sm  w-full">
+          {/* Compact Checkbox */}
           <input
             type="checkbox"
             checked={todo.completed}
             onChange={() => dispatch(toggleComplete(todo.id))}
-            className="w-5 h-5 accent-green-500 cursor-pointer"
+            className="w-4 h-4 min-w-[16px] accent-green-500 cursor-pointer flex-shrink-0"
           />
+    
+          {/* Compact Text Input */}
           <input
             type="text"
-            className={`flex-1 border-none outline-none bg-transparent ${
-              todo.completed ? "line-through text-gray-500" : "text-gray-800"
-            } ${isTodoEditable ? "border-b border-gray-300 px-1" : ""}`}
             value={todoMsg}
             onChange={(e) => setTodoMsg(e.target.value)}
             readOnly={!isTodoEditable}
             onKeyDown={(e) => e.key === "Enter" && editTodo()}
+            className={`
+              flex-1 min-w-0 py-1
+              text-sm sm:text-base
+              ${todo.completed ? "line-through text-gray-400" : "text-gray-800"}
+              ${isTodoEditable 
+                ? "border-b border-gray-300 px-1 bg-gray-50" 
+                : "bg-transparent"
+              }
+              outline-none transition-all
+            `}
           />
-          <button
-            onClick={() =>
-              isTodoEditable ? editTodo() : setIsTodoEditable((prev) => !prev)
-            }
-            disabled={todo.completed}
-            className="text-gray-700 hover:text-yellow-600 disabled:opacity-50"
-          >
-            {isTodoEditable ? "💾" : <FaEdit />}
-          </button>
-          <button
-            onClick={() => dispatch(removeTodo(todo))}
-            className="text-red-500 hover:text-red-700"
-          >
-            <FaTrash />
-          </button>
-        </>
+    
+          {/* Compact Action Buttons */}
+          <div className="flex gap-1 flex-shrink-0">
+            <button
+              onClick={() => isTodoEditable ? editTodo() : setIsTodoEditable((prev) => !prev)}
+              disabled={todo.completed}
+              className="p-1.5 rounded-full hover:bg-gray-100 disabled:opacity-50 transition-colors"
+            >
+              {isTodoEditable ? "💾" : <FaEdit className="text-gray-600 text-sm" />}
+            </button>
+            
+            <button
+              onClick={() => dispatch(removeTodo(todo))}
+              className="p-1.5 text-red-500 rounded-full hover:bg-red-50 transition-colors"
+            >
+              <FaTrash className="text-sm" />
+            </button>
+          </div>
+        </div>
       );
     }
     
-export default TodoElement;
+    export default TodoElement;

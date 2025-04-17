@@ -25,7 +25,7 @@ function MiddleComponent({ todo }) {
           todos.map((todo) => (
             <div
               key={todo.id}
-              className="flex items-center gap-3 bg-white p-3 rounded-lg shadow-md mb-3 hover:shadow-lg transition-shadow"
+              className="flex items-center gap-3 bg-white rounded-lg shadow-md mb-3 hover:shadow-lg transition-shadow"
             >
               <TodoElement todo={todo} />
             </div>
