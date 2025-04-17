@@ -31,7 +31,7 @@ function TodoElement({todo}) {
       }
 
       return (
-        <div className="flex items-center gap-2 py-4 px-5 bg-white rounded-lg shadow-sm  w-full">
+        <div className="flex items-center gap-2 py-3 px-5 bg-white rounded-lg shadow-sm  w-full">
           {/* Compact Checkbox */}
           <input
             type="checkbox"
